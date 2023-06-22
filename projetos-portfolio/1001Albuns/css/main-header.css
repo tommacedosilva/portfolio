@@ -1,0 +1,13 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header span {
+    color: #2DB2D7;
+}
+
+.main-header .main-action {
+    text-decoration: none;
+}

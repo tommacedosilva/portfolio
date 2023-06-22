@@ -1,0 +1,18 @@
+.main-banner {
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.main-banner .wrapper {
+    display: flex;
+    width: 1300px;
+}
+
+.main-banner .main-box {
+    max-height: 500px;
+}
+
+.main-banner .main-box img {
+    height: 480px;
+    margin-right: 150px;
+}

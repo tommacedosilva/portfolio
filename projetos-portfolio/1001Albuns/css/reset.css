@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(180deg, rgba(5, 21, 26, 0.18) 0%, #2DB2D7 100%);
+    width: 1300px;
+    height: 1024px;
+    font-family: 'Poppins', sans-serif;
+    margin: 23px;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
