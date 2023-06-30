@@ -19,8 +19,9 @@
 
 .main-img {
     box-shadow: 0 3px 2px 2px #2DB2D7;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: 40px;
+    transform: rotate(-0.8deg);
 }
 
 .navigation {
