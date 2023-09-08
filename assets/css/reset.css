@@ -1,10 +1,16 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --bg-primary: #0B0F07;
+    --primary-color: #F0FAE3;
+    --font-family-primary: 'Josefin Sans', sans-serif;
+    --font-size-primary: 1.6rem;
 }
 
 body {
-    background-color: #020204;
-    color: #22B455;
+    padding: 0;
+    margin: 0 150px;
+    box-sizing: border-box;
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+    font-size: var(--font-size-primary);
+    font-family: var(--font-family-primary);
 }
