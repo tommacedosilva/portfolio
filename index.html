@@ -1,126 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
-    <title>dev Tom - Portfólio</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Tom - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header class="main-header">
-        <img src="/assets/img/Logo.svg" alt="">
+    <!-- header design -->
+    <header class="header">
+        <a href="#home" class="logo">Tom. <span class="animate" style="--i:1"></span></a>
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2"></span></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projetos</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#contact">Contato</a>
 
-        <img class="img-detalhe" src="/assets/img/img-detalhe.png" alt="">
-        
-
-        <!-- <a href="#menu" class="icon-menu">Abrir Menu</a> -->
-
-        <nav id="menu" class="menu">
-            <a href="" class="main-action">Home</a>
-            <a href="" class="main-action">Projetos</a>
-            <a href="" class="main-action">Sobre mim</a>
-            <a href="" class="main-button" href="" lang="en">Download CV</a>
-
-            <!-- <a href="#menu" class="icon-close">X</a> -->
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2"></span>
         </nav>
     </header>
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h3>Hello Friend,</h3>
+            <h1>Eu sou o <span>Tom Macedo Silva</span><span class="animate" style="--i:2"></span></h1>
+            <div class="text-animate">
+                <h3>Desenvolvedor Frontend</h3>
+                <span class="animate" style="--i:3"></span>
+            </div>
+            <p>Sou um desenvolvedor frontend com uma paixão ardente por transformar ideias criativas em experiências visuais envolventes. Assim como um diretor de cinema molda a narrativa através de cenas, eu moldo a interface de um site para contar uma história única e memorável.<span class="animate" style="--i:4"></span></p>
+            <div class="btn-box">
+                <a href="CV - Wellington Macedo da Silva.pdf" target="_blank" class="btn" lang="en">Download CV</a>
+                <a href="#contact" class="btn">Bora conversar!</a>
+                <span class="animate" style="--i:5"></span>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/wellington-macedo-da-silva-dev/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/tommacedosilva" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://wa.me/message/7X7UKJOWJGXKB1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <span class="animate" style="--i:6"></span>
+        </div>
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7"></span>
+    </section>
+    
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Meus <span>Projetos</span></h2>
+        <div class="project-row">
+            <div class="project-column">
+                <div class="project-img">
+                    <a href="#"><img src="/img/img-projeto-1.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="project-column">
+                <div class="project-img">
+                    <a href="#"><img src="/img/img-projeto-2.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="project-column">
+                <div class="project-img">
+                    <a href="#"><img src="/img/img-projeto-3.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <p>
+            Em cada projeto que empreendo, não apenas me concentro na estética, mas também na narrativa por trás do design. Assim como um filme tem um enredo que envolve o público, meus projetos de desenvolvimento frontend contam uma história digital. Quando apresento meus trabalhos, busco destacar não apenas os aspectos visuais, mas também a jornada do usuário e o propósito por trás de cada elemento.<br><br>
+            Acredito que uma boa apresentação não apenas revela o design, mas também cria uma conexão emocional com o espectador, explicando as escolhas e a inspiração por trás de cada detalhe. Dessa forma, garanto que meus projetos não sejam apenas belos à vista, mas também envolventes e significativos para o público.
+        </p>
+        <!-- <div class="btn-box btns">
+            <a href="#" class="btn">Mais Projetos</a>
+        </div> -->
+    </section>
 
-    <section class="main-banner">
-        <div class="wrapper">
-            <div class="main-img">
-                <img src="/assets/img/Foto-perfil.png" alt="">
-            </div>
-            <div class="main-box">
-                <h1 class="main-title">Hello, Friend!</h1>
-                <h3 class="main-subtitle">Eu sou o Tom, desenvolvedor criativo.</h3>
-                <p class="main-text">Apaixonado por tecnologia e cinema. Adoro construir projetos digitais incríveis dignos de filme.</p>
-                <a href="" class="main-button">Quero criar algo incrível!</a>
-            </div>
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">Sobre <span>Mim</span></span></h2>
+        <div class="about-img">
+            <img src="/img/portfolio-hero.png" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Trazendo a Arte para a Web: Desenvolvedor Frontend Apaixonado por Cinema</h3>
+            <p>
+                Sou um desenvolvedor frontend com uma paixão ardente por transformar ideias criativas em experiências visuais envolventes. Assim como um diretor de cinema molda a narrativa através de cenas, eu moldo a interface de um site para contar uma história única e memorável.
+            </p>
+            <p>
+                Meu amor pelo cinema transcende as telas e se reflete em cada pixel que eu coloco na web. Assim como um cineasta escolhe cuidadosamente cada quadro para transmitir emoções e mensagens, eu escolho cada elemento de design para criar layouts bonitos e funcionais que cativam os visitantes.
+            </p> 
+            <p>
+                Assim como um diretor trabalha com atores para criar performances excepcionais, eu colaboro com equipes multidisciplinares para criar experiências de usuário extraordinárias. Minha busca incessante pela perfeição visual e usabilidade é o que me impulsiona todos os dias.
+            </p>
+            <p>
+                Então, se você busca um desenvolvedor frontend apaixonado por cinema, alguém que transformará seus conceitos em realidade na web de uma forma verdadeiramente cinematográfica, estou pronto para fazer parte do seu próximo projeto. Vamos criar algo que não apenas impressione, mas também conte uma história que ressoe com o público.
+            </p>
+            <p>
+                Juntos, podemos trazer a magia do cinema para o mundo digital.
+            </p>
+            <!-- <div class="btn-box btns">
+                <a href="#" class="btn">Leia Mais</a>
+            </div> -->
         </div>
     </section>
 
-    <section class="main-projects">
-        <!-- <h2 class="main-title">Projetos</h2> -->
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Bora <span>Conversar!</span><span class="animate scroll" style="--i:1"></span></h2>
 
-        <div class="wrapper-project">
-            <article class="project-card">
-                <img src="/assets/img/img-projeto-1.jpg" alt="" class="project-img">
-                <!-- <div class="project-text">
-                    <h3 class="title">Star Wars</h3>
-                </div> -->
-            </article>
-            <article class="project-card">
-                <img src="/assets/img/img-projeto-2.jpg" alt="" class="project-img">
-                <!-- <div class="project-text">
-                    <h3 class="title">Matrix</h3>
-                </div> -->
-            </article>
-            <article class="project-card">
-                <img src="/assets/img/img-projeto-3.png" alt="" class="project-img">
-                <!-- <div class="project-text">
-                    <h3 class="title">Sherlock Holmes</h3>
-                </div> -->
-            </article>
+        <form method="post" action="/mail.php">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="" id="" placeholder="Nome Completo" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="" id="" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
 
-            <a href="" class="main-button">Veja mais!</a>
-        </div>
+                <span class="animate scroll" style="--i:3"></span>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" name="" id="" placeholder="Telefone" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="" id="" placeholder="Assunto do Email" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="message" class="field" id="" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Enviar</button>
+
+                <span></span>
+            </div>
+        </form>
     </section>
 
-    <section class="main-description">
-        <!-- <h2 class="main-title">Quem sou eu?</h2> -->
 
-        <div class="wrapper-description">
-            <p class="main-text">Como todo herói, tive minha chamada para a aventura e não embarquei de primeira, mas aconteceu o evento onde descobri minha paixão em criar!</p>
-            <p class="main-text">E com desenvolvimento front-end e design consigo ter essa alegria, de descobrir o que a empresa trabalha e mergulhar nesse mundo para trazer um produto que brilhe os olhos da pessoa.</p>
-            <a href="" class="main-button">Quero criar algo incrível!</a>
-        </div>
-        <div class="wrapper-img">
-            <img src="/assets/img/img-about.jpg" alt="">
-        </div>
-    </section>
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Tom | Todos os direitos reservados.</p>
 
-    <footer class="main-footer">
-        <div class="wrapper-redes-sociais">
-            <a href="" class="action" target="_blank">
-                <img src="/assets/img/rede-social-In.png" alt="">
-            </a>
-            <a href="" class="action" target="_blank">
-                <img src="/assets/img/rede-social-github.png" alt="">
-            </a>
-            <a href="" class="action" target="_blank">
-                <img src="/assets/img/rede-social-whats.png" alt="">
-            </a>
-            <a href="" class="action" target="_blank">
-                <img src="/assets/img/rede-social-mail.png" alt="">
-            </a>
+            <span class="animate scroll" style="--i:1"></span>
         </div>
 
-        <header class="main-footer-menu">
-            <nav id="menu" class="menu">
-                <a href="" class="main-action">Home</a>
-                <a href="" class="main-action">Projetos</a>
-                <a href="" class="main-action">Sobre mim</a>
-            </nav>
-            <div class="main-footer-menu --second">
-                <a href="" class="main-button" href="" lang="en">Download CV</a>
-                <a href="" class="main-button" href="">+55 11 94538-0982</a>
-            </div>
-            <img src="/assets/img/Logo.svg" alt="">
-        </header>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
 
-        <div class="main-footer-info">
-            <span>Wellington Macedo da Silva - desenvolvedor criativo</span>
-            <div class="info">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
-                <span>Todos os direitos reservados</span>
-            </div>
+            <span class="animate scroll" style="--i:3"></span>
         </div>
-
     </footer>
 
+    <script src="/js/script.js"></script>
+
 </body>
+
 </html>
+
+<!-- https://css-tricks.com/making-css-animations-feel-natural/ -->
