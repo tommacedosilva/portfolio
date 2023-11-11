@@ -1,8 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
 
+@font-face {
+    font-family: Matrix;
+    src: url('../fonts/Matrix-MZ4P.ttf');
+ }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: #070A04;
+    color: #F0FAE3;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Fundo-hero-section.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: Matrix, 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #F0FAE3;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #F0FAE3;
+    color: #070A04;
 }
