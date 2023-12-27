@@ -1,7 +1,7 @@
 <h1>Meu Portfolio</h1>
 <h6>Don´t speak portuguese? <a href="https://github.com/tommacedosilva/portfolio/blob/main/Readme-en.md">Click here</a> to see this page in english.</h6>
 
-## Com a necessidade de divulgar meu trabalho, decidi criar meu portfólio e ao mesmo ser onde a evolução do meu aprendizado é mostrada.
+<h3>Com a necessidade de divulgar meu trabalho, decidi criar meu portfólio e ao mesmo ser onde a evolução do meu aprendizado é mostrada.</h3>
 
 #### Pensando como um software, vou criar ele em versões. 
 

@@ -83,38 +83,45 @@
             <img src="assets/img/portfolio-hero.png" alt="" class="sobre__img">
         </section>
         <section class="contato">
-            <!-- <form method="post" action="https://script.google.com/macros/s/AKfycbxWsc-DZe4Mdi6iZjJ3RIQkc0VKvo-Jtptne1Kaj2qA6n1vvjdvwE7IE44gM18j1bug/exec">
-                <label for="fname">Como você se chama? (Nome e Sobrenome)</label>
-                <input type="text" id="fname" name="fname"><br>
+            <div class="whatsapp">
+                <span>Whatsapp</span>
+                <a href="#">+55 11 94538-0982</a>
+            </div>
+            <div class="email">
+                <span>E-mail</span>
+                <a href="#">contato@tommacedo.dev.br</a>
+            </div>
+            <form method="POST" action="">
+                <input name="Name" id="Name" type="text" placeholder="Como você se chama? (Nome e Sobrenome)" required>
 
-                <label for="emailEmp">Qual é o seu e-mail corporativo?</label>
-                <input type="email" id="emailEmp" name="emailEmp"><br>
+                <input name="Email" type="email" placeholder="Qual seu e-mail corporativo?" required>
 
-                <label for="numCel">Qual seu celular? (Whatsapp)</label>
-                <input type="number" id="numCel" name="numCel"><br>
+                <input type="tel" name="celular" id="celular" placeholder="Qual seu celular? (Whatsapp)" required>
 
-                <label for="nameEmp">Qual empresa representa?</label>
-                <input type="text" id="nameEmp" name="nameEmp"><br>
+                <input type="text" name="empresa" id="empresa" placeholder="Qual empresa representa?">
 
-                <label for="cargoEmp">Qual o seu cargo?</label>
-                <select name="cargoEmp" id="cargoEmp">
-                    <option value="">--Please choose an option--</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
+                <label for="totalColab">Total de colaboradores</label>
+                <select name="totalColab" id="totalColab">
+                    <option value="">--Escolher--</option>
+                    <option value="10">0 - 10</option>
+                    <option value="50">11 - 50</option>
+                    <option value="200">51 - 200</option>
+                    <option value="201">Mais de 200</option>
                 </select>
-                <br>
 
-                <button type="submit">Enviar</button>
-            </form>  -->
-            <form method="POST" action="https://script.google.com/macros/s/AKfycbxWsc-DZe4Mdi6iZjJ3RIQkc0VKvo-Jtptne1Kaj2qA6n1vvjdvwE7IE44gM18j1bug/exec">
-                <input name="Email" type="email" placeholder="Email" required>
-                <input name="Name" type="text" placeholder="Name" required>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Send</button>
+                <label for="cargo">Qual o seu cargo?</label>
+                <select name="cargo" id="cargo">
+                    <option value="">--Escolher--</option>
+                    <option value="Diretor">Diretor / C-Level / Sócio</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Design">Design</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Compras">Compras</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Conte um pouco o que está buscando"></textarea>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
