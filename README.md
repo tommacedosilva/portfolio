@@ -1,7 +1,7 @@
 # Meu Portfolio
 ## Com a necessidade de divulgar meu trabalho, decidi criar meu portfólio e ao mesmo ser onde a evolução do meu aprendizado é mostrada.
 
-### Pensando como um software, vou criar ele em versões. 
+#### Pensando como um software, vou criar ele em versões. 
 
 ### A ideia central do layout é mostrar meus conhecimentos junto com minhas referências a cinema, onde eu estou juntando minhas duas paixões.
 
