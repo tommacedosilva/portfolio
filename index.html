@@ -1,152 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Macedo - Portfólio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 767.98px)">
-    <link rel="stylesheet" href="assets/css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1083.98px)">
-    <link rel="stylesheet" href="assets/css/desktop.css" media="screen and (min-width: 1084px)">
-    <link rel="stylesheet" href="assets/css/print.css" media="print"> -->
+    <style>
+        body {
+            margin: 5px 20px 0 20px;
+        }
+        .header.fix.top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero {
+            background-image: url("assets/img/hero-image.png") center cover;
+        }
+        .hero-section {
+            display: block;
+            width: 180px;
+            margin-top: 10%;
+        }
+    </style>
 </head>
-
 <body>
-    <header id="header">
-        <nav class="menu">
-            <h1 class="logo">Tom.</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <p>Hello, friend</p>
-            <h2>Eu sou o Tom!</h2>
-            <h3>Desenvolvedor front-end e designer entusiasta com uma paixão por transformar ideias criativas em
-                experiências visuais envolventes. Assim como um diretor de cinema molda a narrativa através de cenas, eu
-                moldo a interface de um site para contar uma história única e memorável.</h3>
-            <a href="#" class="btn" lang="en">Download CV</a>
-            <a href="#" class="btn">Bora conversar!</a>
-            <div class="icons">
-                <a href="#" class="btn-icon">Whatsapp</a>
-                <a href="#" class="btn-icon">Github</a>
-                <a href="#" class="btn-icon">LinkedIn</a>
+    <header class="header">
+        <div class="header fix">
+            <div class="header fix top">
+                <img src="" alt="Logo TOM">
+                <div class="toggle-language">
+                    <p>PT</p>
+                    <img src="" alt="Imagem toggle muda linguagem do site (português e inglês)" srcset="">
+                    <p>EN</p>
+                </div>
             </div>
-        </section>
+            <img src="" alt="Design linhas Matrix">  
+        </div>
     </header>
 
-    <main>
-        <section class="projetos">
-            <h2>Histórias feitas: Projetos que me orgulho de ter feito</h2>
-            <p>
-                Em cada projeto que empreendo, não apenas me concentro na estética, mas também na narrativa por trás do
-                design. Assim como um filme tem um enredo que envolve o público, meus projetos de desenvolvimento
-                frontend contam uma história digital. Quando apresento meus trabalhos, busco destacar, não apenas os
-                aspectos visuais, mas também a jornada do usuário e o propósito por trás de cada elemento. Acredito que
-                uma boa apresentação não apenas revela o design, mas também cria uma conexão emocional com o espectador,
-                explicando as escolhas e a inspiração por trás de cada detalhe. Dessa forma, garanto que meus projetos
-                não sejam apenas belos à vista, mas também envolventes e significativos para o público.
-            </p>
-            <div class="projetos-display">
-                <img src="assets/img/img-projeto-1.jpg" alt="">
-                <img src="assets/img/img-projeto-2.jpg" alt="">
-                <img src="assets/img/img-projeto-3.png" alt="">
-            </div>
+    <main class="container">
+        <section class="hero">
+            <nav class="hero-section">
+                <img src="" alt="Ícone de uma rede social">
+                <img src="" alt="Ícone de uma rede social">
+                <img src="" alt="Ícone de uma rede social">
+                <img src="" alt="Ícone de uma rede social">
+            </nav>
         </section>
-        <section class="sobre">
-            <h2>Trazendo a Arte para a Web: Desenvolvedor Front-end Apaixonado por Cinema</h2>
-            <div class="sobre__texto">
-                <p>
-                    Meu amor pelo cinema transcende as telas e se reflete em cada pixel que eu coloco na web.
-                    Assim como um cineasta escolhe cuidadosamente cada quadro para transmitir emoções e mensagens, eu
-                    escolho cada elemento de design para criar layouts bonitos e funcionais que cativam os
-                    visitantes.Assim como um diretor trabalha com atores para criar performances excepcionais, eu
-                    colaboro com equipes multidisciplinares para criar experiências de usuário extraordinárias.
-                </p>
-                <p>
-                    Minha busca incessante pela perfeição visual e usabilidade é o que me impulsiona todos os dias.
-                    Então, se você busca um desenvolvedor frontend apaixonado por cinema, alguém que transformará seus
-                    conceitos em realidade na web de uma forma verdadeiramente cinematográfica, estou pronto para fazer
-                    parte do seu próximo projeto. Vamos criar algo que não apenas impressione, mas também conte uma
-                    história que ressoe com o público.
-                </p>
-                <p>Juntos, podemos trazer a magia do cinema para o mundo digital.</p>
-            </div>
-            <img src="assets/img/portfolio-hero.png" alt="" class="sobre__img">
-        </section>
-        <section class="contato" id="contato">
-            <h2>Feliz por começarmos aqui nossa jornada</h2>
-            <div class="agendar">
-                <p>Agende um papo rápido para saber como posso ajudar o seu negócio.</p>
-                <button>Agendar Agora</button>
-            </div>
-            <div class="whatsapp">
-                <span>Whatsapp</span>
-                <a href="#">+55 11 94538-0982</a>
-            </div>
-            <div class="email">
-                <span>E-mail</span>
-                <a href="#">contatotommacedosilva@gmail.com</a>
-            </div>
-            <form method="POST" action="">
-                <input name="Name" id="Name" type="text" placeholder="Como você se chama? (Nome e Sobrenome)" required>
-
-                <input name="Email" type="email" placeholder="Qual seu e-mail corporativo?" required>
-
-                <input type="tel" name="celular" id="celular" placeholder="Qual seu celular? (Whatsapp)" required>
-
-                <input type="text" name="empresa" id="empresa" placeholder="Qual empresa representa?">
-
-                <label for="totalColab">Total de colaboradores</label>
-                <select name="totalColab" id="totalColab">
-                    <option value="">--Escolher--</option>
-                    <option value="10">0 - 10</option>
-                    <option value="50">11 - 50</option>
-                    <option value="200">51 - 200</option>
-                    <option value="201">Mais de 200</option>
-                </select>
-
-                <label for="cargo">Qual o seu cargo?</label>
-                <select name="cargo" id="cargo">
-                    <option value="">--Escolher--</option>
-                    <option value="Diretor">Diretor / C-Level / Sócio</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Design">Design</option>
-                    <option value="Tecnologia">Tecnologia</option>
-                    <option value="Compras">Compras</option>
-                    <option value="Outros">Outros</option>
-                </select>
-
-                <textarea name="" id="" cols="30" rows="10" placeholder="Conte um pouco o que está buscando"></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
+        <section class="projects"></section>
+        <section class="bio"></section>
+        <section class="contacts"></section>
     </main>
-
-    <footer>
-        <h2>Bora Conversar?</h2>
-        <button class="contato-menu"><a href="#contato">Contato</a></button>
-        <h3>Links Úteis</h3>
-        <nav class="menu-footer">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <h3>Contatos</h3>
-        <button><a href="">Bora Conversar?</a></button>
-        <p>&copy; 2023 - Desenvolvido por Tom. Todos direitos reservados.</p>
-        <a href="#">LinkedIn</a>
-        <a href="#">Github</a>
-    </footer>
-
+    
+    
+    <footer class="footer"></footer>
 </body>
-
 </html>
