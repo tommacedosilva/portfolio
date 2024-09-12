@@ -16,13 +16,25 @@ body {
     align-items: center;
 }
 
-
-
 .hero-section {
     display: block;
     width: 180px;
-    margin-top: 10%;
+    margin-top: 8%;
 }
+
+.hero-section > li {
+    list-style: none;
+    top: 900px;
+}
+
+.hero-section.show-down {
+    visibility: hidden;
+}
+
+.hero {
+    display: grid;
+}
+
 .line {
     top: 0;
     position: absolute;
@@ -66,8 +78,15 @@ body {
     left: 90%;
 }
 
-section.hero {
-    background-image: url(../img/hero-image.png);
+.hero {
+    background: no-repeat center url(../img/hero-image.png);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.projects {
+    background-image: url(../img/projects-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
