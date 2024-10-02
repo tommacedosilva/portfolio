@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura total da tela */
+}
+
+header {
+    background: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    flex: 1; /* O main ocupa o espaço restante */
+    position: relative;
+    overflow: hidden; /* Esconde a rolagem */
+}
+
+.section {
+    height: 100vh; /* Cada seção ocupa 100% da altura da janela */
+    display: none; /* Inicialmente escondido */
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    flex-direction: column;
+}
+
+.section.active {
+    display: flex; /* Exibe apenas a seção ativa */
+}
+
+.arrow {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.arrow.up {
+    bottom: 125px; /* Ajuste a distância do fundo */
+    right: 20px; /* Distância do lado direito */
+}
+
+.arrow.down {
+    bottom: 70px; /* Distância do fundo */
+    right: 20px; /* Distância do lado direito */
+}

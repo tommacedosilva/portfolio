@@ -4,99 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Macedo - Portfólio</title>
+    <!-- 
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/toggle.css">
+    -->
+    <link rel="stylesheet" href="./assets/css/test.css">
 </head>
 <body>
-    <div class="linha l1" style="left: 5%"></div>
-    <div class="linha l2" style="left: 15%"></div>
-    <div class="linha l3" style="left: 25%"></div>
-    <div class="linha l4" style="left: 35%"></div>
-    <div class="linha l5" style="left: 45%"></div>
-    <div class="linha l6" style="left: 55%"></div>
-    <div class="linha l7" style="left: 65%"></div>
-    <div class="linha l8" style="left: 75%"></div>
-    <div class="linha l9" style="left: 85%"></div>
-    <div class="linha l10" style="left: 95%"></div>
-    
-    <!-- Menu - LOGO e TOGGLE -->
-    <header class="header">
-        <img src="assets/img/tom.svg" alt="Logo TOM na fonte do Matrix">
-        <div class="toggle">
-            <input type="checkbox" id="language-toggle" class="check-toggle check-toggle-round-flat">
-            <label for="language-toggle"></label>
-            <span class="on">PT</span>
-            <span class="off">EN</span>
-        </div>
+    <header>
+        <h1>TOM.</h1>
+
     </header>
 
     <main class="container">
-
-        <!-- HERO: Imagem de fundo, Apresentação quem eu sou, Botões contato na lateral, Botão principal de contato -->
-        <section class="hero">
-            <p>hello, friend</p>
-            <h1>eu sou o <strong>Tom!</strong></h1>
-            <h3>Desenvolvedor Front-end <br>e apaixonado por filmes.</h3>
-            <ul>
-                <a href="">
-                    <li><img src="assets/img/icon-github.png" alt=""></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/img/icon-behance.png" alt=""></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/img/icon-linkedin.png" alt=""></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/img/icon-whatsApp.png" alt=""></li>
-                </a>
-            </ul>
-            <button>Vamos começar a jornada!</button>
+        <section class="section active">
+            <h2>Seção 1</h2>
+            <p>Conteúdo da seção 1.</p>
         </section>
-        <br>
-        <!-- PROJECTS: Imagem de fundo, título, texto sobre projetos, Projetos num carrossel que imita rolo de filme, Botão para contato -->
-        <section class="projects">
-            <h2>Projetos</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius maxime laborum fugit cupiditate minima. Eos eveniet nisi adipisci illo distinctio voluptate architecto ad consequuntur. Ipsum.
-            </p><br>
-            <img src="assets/img/Mini-square.png" alt="">
-            <div class="slide-container">
-                <div class="slide">
-                    <img src="/assets/img/slide-img.png" alt="">
-                    <div class="caption">Descrição imagem <a href="#">Site</a></div>
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/slide-img.png" alt="">
-                    <div class="caption">Descrição imagem <a href="#">Site</a></div>
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/slide-img.png" alt="">
-                    <div class="caption">Descrição imagem <a href="#">Site</a></div>
-                </div>
-                <div class="slide">
-                    <img src="/assets/img/slide-img.png" alt="">
-                    <div class="caption">Descrição imagem <a href="#">Site</a></div>
-                </div>
-            </div>
-            <img src="assets/img/Mini-square.png" alt="">
-            <button>Comece sua jornada aqui</button>            
+        <section class="section">
+            <h2>Seção 2</h2>
+            <p>Conteúdo da seção 2.</p>
         </section>
-
-        <!-- BIO: Imagem de fundo mais destacada uma breve descrição sobre mim, botão SAIBA MAIS -->
-        <!-- Clicando no saiba mais: - Continuação da descrição sobre mim | - botão para contato -->
-        <section class="bio">
+        <section class="section">
+            <h2>Seção 3</h2>
+            <p>Conteúdo da seção 3.</p>
         </section>
-
-        <!-- Imagem de fundo, Quadro de agendamento, Formulário -->
-        <section class="contacts">
-            
-        </section>
-
+        <!-- Adicione mais seções conforme necessário -->
     </main>
-    
-    <footer class="footer">
-        &copy; 2024 Desenvolvido por Tom. Todos os direitos reservados
+
+    <footer>
+        <p>&copy; 2024 Desenvolvido por Wellington. Todos os direitos reservados</p>
     </footer>
+
+    <button class="arrow up" onclick="moveSection(-1)">▲</button>
+    <button class="arrow down" onclick="moveSection(1)">▼</button>
+
+    <script src="./assets/js/script.js"></script>
+    
+    
+   
 </body>
 </html>
