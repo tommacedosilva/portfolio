@@ -9,15 +9,17 @@ body {
 }
 
 header {
-    background: #444;
-    padding: 20px;
+    background: #555;
+    padding: 10px 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
-    background: #444;
-    padding: 10px;
+    background: #555;
     text-align: center;
+    padding: 5px;
 }
 
 .container {
@@ -39,9 +41,15 @@ footer {
     display: flex; /* Exibe apenas a seção ativa */
 }
 
+section.hero {
+    background-image: url(../img/hero-img-test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .arrow {
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -59,3 +67,4 @@ footer {
     bottom: 70px; /* Distância do fundo */
     right: 20px; /* Distância do lado direito */
 }
+

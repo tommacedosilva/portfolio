@@ -25,3 +25,25 @@ function moveSection(direction) {
 
 // Exibe a primeira seção inicialmente
 showSection(currentIndex);
+
+
+let slideIndex = 0;
+let isDragging = false;
+
+const slides = document.querySelectorAll('.slide');
+const filme = document.querySelector('.filme');
+
+function mostrarSlide(index) {
+    if (index >= slides.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = slides.length - 1;
+    } else {
+        slideIndex = index;
+    }
+    
+    const offset = -slideIndex * 100; // Ajusta a posição dos slides
+    filme.style.transform = `translateX(${offset}%)`;
+}
+
+
