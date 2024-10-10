@@ -37,16 +37,6 @@ footer {
     flex-direction: column;
 }
 
-.section.active {
-    display: flex; /* Exibe apenas a seção ativa */
-}
-
-section.hero {
-    background-image: url(../img/hero-img-test.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .arrow {
     position: absolute;
     background: transparent;
@@ -59,12 +49,32 @@ section.hero {
 }
 
 .arrow.up {
-    bottom: 125px; /* Ajuste a distância do fundo */
+    bottom: 80px; /* Ajuste a distância do fundo */
     right: 20px; /* Distância do lado direito */
 }
 
 .arrow.down {
-    bottom: 70px; /* Distância do fundo */
+    bottom: 40px; /* Distância do fundo */
     right: 20px; /* Distância do lado direito */
 }
 
+.section.active {
+    display: flex; /* Exibe apenas a seção ativa */
+}
+
+section.hero {
+    background-image: url(../img/hero-img-test.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.projects {
+    background-image: url(../img/projects-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.schedule {
+    background-color: #3D5122;
+}
