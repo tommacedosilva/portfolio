@@ -1,7 +1,14 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #040907;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -9,17 +16,18 @@ body {
 }
 
 header {
-    background: #555;
-    padding: 10px 10px;
+    background: #040907;
+    background-image: url(../img/lines-matrix.png);
+    padding: 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
 
 footer {
-    background: #555;
+    background: #040907;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .container {
@@ -33,7 +41,7 @@ footer {
     display: none; /* Inicialmente escondido */
     justify-content: center;
     align-items: center;
-    background-color: #555;
+    background-color: #040907;
     flex-direction: column;
 }
 
@@ -60,6 +68,8 @@ footer {
 
 .section.active {
     display: flex; /* Exibe apenas a seção ativa */
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 section.hero {
@@ -68,6 +78,7 @@ section.hero {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 section.projects {
     background-image: url(../img/projects-image.png);
     background-size: cover;
