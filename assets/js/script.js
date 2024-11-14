@@ -13,6 +13,16 @@ function showSection(index) {
         currentIndex = index;
     }
 
+    // Reseta a opacidade de todas as seções para 0
+    sections.forEach((section) => {
+        section.style.opacity = '0';
+    })
+
+    // Exibe a seção ativa e adiciona transição
+    setTimeout(() => {
+        sections[currentIndex].style.opacity = '1';
+    }, 100)
+
     // Atualiza a visibilidade das seções
     sections.forEach((section, i) => {
         section.classList.toggle('active', i === currentIndex);
@@ -20,7 +30,12 @@ function showSection(index) {
 }
 
 function moveSection(direction) {
-    showSection(currentIndex + direction);
+    currentIndex += direction
+    showSection(currentIndex);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 // Exibe a primeira seção inicialmente
@@ -43,7 +58,19 @@ function mostrarSlide(index) {
     }
     
     const offset = -slideIndex * 100; // Ajusta a posição dos slides
+    filme.style.transition = 'transform 0.5s ease';
     filme.style.transform = `translateX(${offset}%)`;
 }
 
 
+function showMoreBio() {
+    const bioMoreSection = document.getElementById('bio-more')
+    bioMoreSection.classList.toggle('show');
+
+    const button = document.querySelector('.bio button')
+    if (bioMoreSection.classList.contains('show')) {
+        button.textContent = "Apenas sinopse";
+    } else {
+        button.textContent = "Continua...";
+    }
+}

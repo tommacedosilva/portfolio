@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom Macedo - Portfólio</title>
+    <link rel="stylesheet" href="./assets/css/mediaQueries.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
         <img src="assets/img/tom.svg" alt="">
-        <label for="" class="switch">
-            <input type="checkbox" name="" id="">
-            <span class="slider round"></span>
-        </label>
-        <!-- TO DO -->
-        <!-- Montar toggle de mudar idioma e achar solução que altera ao clicar nele -->
+        <button>Comece sua jornada</button>
     </header>
     
     <main class="container">
@@ -48,18 +44,20 @@
             <p>Somos todos heróis na nossa história</p>
             <img src="./assets/img/bio-image.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, eaque fugit provident amet nihil dolores ipsa nesciunt sed illum expedita! Fugit blanditiis ex nesciunt suscipit.</p>
-            <button>Continua...</button>
-            <h3>Um longo caminho</h3>
-            <p>As vezes difícil mas nunca deixou de ser divertido.</p>
-            <img src="./assets/img/pictures-before.png" alt="">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, doloremque? Perferendis modi odit praesentium dolorem officiis voluptatum odio ipsa sapiente est dicta. Reiciendis quidem non architecto magni consectetur iure voluptas similique veniam maiores quaerat, unde amet nemo exercitationem voluptate sit mollitia aut odit illum explicabo ipsam porro ducimus sint eius!
-            </p>
-            <img src="./assets/img/pictures-after.png" alt="">
-            <p>
-                E aí, gostou da minha aventura? Quero fazer parte da sua história! 
-                <button>Vamos juntos nessa jornada</button>
-            </p>
+            <button onclick="showMoreBio()">Continua...</button>
+            <div id="bio-more" style="display: none;">
+                <h3>Um longo caminho</h3>
+                <p>As vezes difícil mas nunca deixou de ser divertido.</p>
+                <img src="./assets/img/pictures-before.png" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, doloremque? Perferendis modi odit praesentium dolorem officiis voluptatum odio ipsa sapiente est dicta. Reiciendis quidem non architecto magni consectetur iure voluptas similique veniam maiores quaerat, unde amet nemo exercitationem voluptate sit mollitia aut odit illum explicabo ipsam porro ducimus sint eius!
+                </p>
+                <img src="./assets/img/pictures-after.png" alt="">
+                <p>
+                    E aí, gostou da minha aventura? Quero fazer parte da sua história!
+                    <button>Vamos juntos nessa jornada</button>
+                </p>
+            </div>
         </section>
         <section class="section contact">
             <h2>A jornada começa aqui!</h2>
