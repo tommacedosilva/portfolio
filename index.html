@@ -6,38 +6,159 @@
     <title>Tom Macedo - Portfólio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>  
-    <header>
-        <h1><img src="/assets/img/tom.svg" alt=""></h1>
-        <a href="">bora conversar</a>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    
+    <header id="header">
+        <h1><img src="/assets/img/tom.svg" alt="logo TOM" class="logo"></h1>
+        <a href="#contato" class="btn-contato">Bora Conversar</a>
     </header>
+
     <main>
         <section class="hero">
-            <p>Hello, friend!</p>
-            <h2>Sou Tom Macedo,</h2>
-            <p>desenvolvedor front-end e designer entusiasta. Vivo entre linhas de código e frames de cinema, criando experiências que unem tecnologia e narrativa visual.</p>
-            <button>Follow the white rabbit</button>
+            <div class="hero-content">
+                <p class="intro">Hello, friend!</p>
+                <h2>Sou Tom,</h2>
+                <p class="description">
+                    desenvolvedor front-end e designer entusiasta. Vivo entre linhas de código e frames de cinema, criando experiências que unem tecnologia e narrativa visual.
+                </p>
+            </div>
+            
+            <div class="social-icons">
+                <div class="social-icons">
+                    <!-- GitHub -->
+                    <a href="https://github.com/tommacedosilva" target="_blank">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#00ff41" d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.09 3.3 9.41 7.88 10.94.58.1.79-.25.79-.55v-1.93c-3.21.69-3.89-1.55-3.89-1.55-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.21 1.78 1.21 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.57-2.56-.29-5.26-1.28-5.26-5.71 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.47.12-3.07 0 0 .96-.3 3.15 1.18a10.8 10.8 0 0 1 5.73 0c2.19-1.48 3.15-1.18 3.15-1.18.64 1.6.24 2.78.12 3.07.75.81 1.2 1.84 1.2 3.1 0 4.44-2.7 5.42-5.27 5.71.41.35.77 1.04.77 2.1v3.12c0 .3.2.65.8.54A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/>
+                      </svg>
+                    </a>
+                  
+                    <!-- Substack -->
+                    <a href="https://tominthematrix.substack.com/" target="_blank">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#00ff41" d="M3 3h18v4H3V3zm0 5h18v4H3V8zm0 5h18v5H3v-5z"/>
+                      </svg>
+                    </a>
+                  
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/wellington-macedo-da-silva" target="_blank">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#00ff41" d="M4.98 3.5a2.48 2.48 0 1 1 0 4.97 2.48 2.48 0 0 1 0-4.97zM4 8h2v12H4V8zm7-1h2v2h.03c.29-.55 1.02-1.14 2.08-1.14C19.36 8 20 9.74 20 12.42V20h-2v-7.42c0-1.65-.6-2.58-1.82-2.58-1.18 0-1.85.88-1.85 2.58V20h-2V8z"/>
+                      </svg>
+                    </a>
+                  
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5511945380982" target="_blank">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#00ff41" d="M12 2a10 10 0 0 0-9.95 11.07A10 10 0 0 0 12 22a9.96 9.96 0 0 0 6.32-2.23l3.43.9-.9-3.43A10 10 0 0 0 12 2zm.01 18A8.01 8.01 0 0 1 4.05 12a8.01 8.01 0 0 1 8.96-7.95 8.01 8.01 0 0 1 7.95 8.96 8.01 8.01 0 0 1-7.95 7.95zm3.85-5.6c-.2-.1-1.2-.59-1.39-.66-.18-.07-.31-.1-.44.1-.13.2-.5.66-.62.8-.12.13-.23.15-.43.05s-.83-.31-1.58-1c-.58-.52-.98-1.17-1.1-1.36-.12-.2 0-.3.1-.4.1-.1.22-.23.32-.35s.13-.2.2-.34c.06-.13.03-.25 0-.34-.03-.08-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.12 0-.25 0-.38 0a.73.73 0 0 0-.53.24c-.17.18-.69.67-.69 1.63s.71 1.89.81 2.02c.1.13 1.4 2.14 3.38 3.02 1.9.84 1.9.56 2.25.53.35-.03 1.2-.49 1.37-.96s.17-.88.12-.96c-.06-.08-.19-.14-.39-.24z"/>
+                      </svg>
+                    </a>
+                  </div>
+                  
+            </div>
+
+            <div class="cta">
+                <a href="#projetos" class="btn">Explorar Projetos</a>
+            </div>
         </section>
-        <section class="bio">
-            <h3>Biografia</h3>
-            <p>
-                Desde que me entendo por gente, sou fascinado por histórias. O cinema me ensinou a contar narrativas. O código me deu o poder de criá-las. Hoje, desenvolvo interfaces que fluem como um bom roteiro e são tão impactantes quanto a cena final de um grande filme.
-            </p>
-            <button>Mais da minha jornada</button>
+
+        <section id="bio" class="bio-section">
+            <div class="bio-content">
+                <h3>Biografia</h3>
+                <div class="bio-layout">
+                    <img src="/assets/img/bio-image.png" alt="Tom programando em um ambiente inspirado em Matrix">
+                    <div class="bio-text">
+                        <p>
+                            Sempre fui fascinado por histórias. No cinema, aprendi a contar narrativas. No código, encontrei a ferramenta para criá-las.
+                        </p>
+                        <p>
+                            Trabalho há 15 anos com TI, mas foi na programação e no design que descobri meu verdadeiro potencial criativo. Com o tempo, percebi que podia unir isso à minha paixão pelo cinema. 
+                        </p>
+                        <button id="expand-bio">Mais da minha jornada</button>
+                    </div>
+                </div>
+                <div id="bio-expanded" class="hidden">
+                    <p>
+                        Esse tempo criei habilidades em HTML, CSS, JavaScript, WordPress, Figma, manutenção de sites, um pouco de PHP e mais. Ao longo dos anos, percebi que podia usar essas competências para desenvolver ferramentas, interfaces e experiências que facilitam a criação para profissionais do audiovisual.
+                    </p>
+                    <p>
+                        Hoje, desenvolvo ferramentas, interfaces e experiências que tornam o processo criativo mais fluido para quem trabalha com audiovisual.
+                    </p>
+
+                    <p>
+                        Se, assim como eu, você se interessa por como a tecnologia pode transformar a maneira como criamos e consumimos histórias, te convido a explorar essa interseção no meu blog, <a href="https://tominthematrix.substack.com/" target="_blank">Tom in the Matrix.</a>
+                    </p>
+                </div>
+            </div>
         </section>
-        <section class="projetos">
-            <h3>Projetos</h3>
-            <p>
+
+        <section id="projetos" class="projetos-section">
+            <h3>Interfaces que contam histórias. Projetos que combinam código e cinema para transformar ideias em experiências visuais.</h3>
+            <!--<p>
                 Interfaces que contam histórias. Projetos que combinam código e cinema para transformar ideias em experiências visuais.
-            </p>
+            </p>-->
+
+            <div class="film-reel">
+                <div class="project" onclick="openProject(this)">
+                    <img src="projetoX.jpg" alt="Projeto X">
+                </div>
+                <div class="project" onclick="openProject(this)">
+                    <img src="projetoX.jpg" alt="Projeto X">
+                </div>
+                <div class="project" onclick="openProject(this)">
+                    <img src="projetoX.jpg" alt="Projeto X">
+                </div>
+            </div>
+
+            <div id="project-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeProject()">&times;</span>
+                    <h4 id="project-title"></h4>
+                    <p id="project-description"></p>
+                </div>
+            </div>
         </section>
-        <section class="contato">
-            <h3>Contato</h3>
+
+        <section id="contact" class="contact-section">
+            <h3>Vamos transformar ideias em código</h3>
             <p>
-                Curioso para saber como podemos criar juntos? Entre em contato e vamos conversar.
+                Me envie uma mensagem ou agende um horário para conversamos!
             </p>
+
+            <div class="contact-links">
+                <a href="https://github.com/tommacedosilva" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/wellington-macedo-da-silva" target="_blank">LinkedIn</a>
+                <a href="https://tominthematrix.substack.com" target="_blank">Blog</a>
+                <a href="https://wa.me/5511945380982" target="_blank">WhatsApp</a>
+            </div>
+
+            <form action="" class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="" placeholder="Nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="" placeholder="E-mail" required>
+                
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="" placeholder="Sua mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/contatotommacedosilva/minha-ideia-em-codigo?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
         </section>
+
     </main>
-    <footer></footer>
+
+    <footer>
+        Desenvolvido por <a href="https://tominthematrix.substack.com/s/dev-tom" class="button"><strong>Tom</strong>.</a>
+    </footer>
+
+    <script src="/assets/js/matrix.js"></script>
+    <script src="/assets/js/script.js"></script>
+
 </body>
 </html>
