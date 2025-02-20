@@ -275,3 +275,14 @@ h2 {
     height: 500px;
     margin-top: 20px;
 }
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00ff00;
+}
