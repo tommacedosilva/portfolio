@@ -32,13 +32,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 15px 20px;
     z-index: 10;
     backdrop-filter: blur(5px);
 }
 
 .logo {
-    height: 40px;
+    height: 30px;
 }
 
 .btn-contato {
@@ -54,6 +54,10 @@ header {
     background: #00ff00;
     color: black;
     text-shadow: 0 0 10px #00ff00;
+}
+
+@media (max-width: 700px) {
+
 }
 
 /* HERO SECTION */
@@ -95,7 +99,7 @@ h2 {
 }
 
 .cta {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .cta .btn {
@@ -116,7 +120,7 @@ h2 {
 
 .social-icons {
     position: absolute;
-    left: 30px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
